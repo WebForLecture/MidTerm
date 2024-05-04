@@ -164,8 +164,7 @@
 
 /* Lecture Page */
 .announcement.page .title,
-.lecture.page .title,
-.contact.page .title{
+.lecture.page .title {
     margin-top: 100px;
 }
 
@@ -361,13 +360,36 @@ body {
     }
 }
 
-/* Contact page */
-.contact.page {
-    position: relative;
-    width: 100%;
-    background-color: aquamarine;
+/* Contact Page */
+.contact_form {
+    background-color: var(--colOrange);
+    
 }
 
-.contact_title {
-    text-align: center;
+.color {
+    display: flex;
+    width: 100%;
+    height: calc(100vh);
+    justify-content: center;
+    align-items: top;
+    padding: 2rem 0px 0px 0px;
+    overflow: hidden;
+    background-color: var(--colWhite);
+}
+
+.con {
+    background-color: var(--colGray);
+    height: max-content;
+}
+
+.con1, .con2 {
+    background-color: var(--colWhite);
+}
+
+.con1 {
+    margin: 2rem;
+}
+
+.con2 {
+    margin: 2rem;
 }
