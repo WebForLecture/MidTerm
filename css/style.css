@@ -137,7 +137,8 @@
 }
 /* Lecture Page */
 .announcement.page .title,
-.lecture.page .title{
+.lecture.page .title,
+.contact.page .title{
     margin-top: 100px;
 }
 .lecture.page .card-img-top {
@@ -327,4 +328,16 @@ body {
         left: 51%;
         width: 155%;
     }
+}
+
+/* Contact page */
+
+.contact.page {
+    position: relative;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.contact_title {
+    text-align: center;
 }
