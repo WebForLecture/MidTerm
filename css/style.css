@@ -15,109 +15,134 @@
     --colOrange: #ff8e3c;
     --colRed: #d9376e;
 }
+
 /* Announcement Page */
 .announcement.page .small-title {
     background-color: var(--colGray);
 }
+
+.announcement.page .small-body {
+    background-color: var(--colGray);
+}
+
 .image-layout {
     margin: 30px;
 }
-.image-layout .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.image-layout .row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-.image-layout .image {
-    background: var(--colDarkGray);
-    position: relative;
-    flex: 1;
-    max-width: 460px;
-    height: 300px;
-    margin: 20px;
-    overflow: hidden;
+
+.image-layout .image{
+	background: rgba(255,255,255,0.2);
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
 }
-.image-layout .image img {
-    height: 400px;
+
+.image-layout .image img{
+	opacity: 1;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
     width: 460px;
-    opacity: 0.8;
-    position: relative;
-    vertical-align: top;
-    transition: 0.6s;
-    transition-property: opacity;
 }
-.image-layout .image:hover img {
-    opacity: 1;
+
+.image-layout .image:hover img{
+	opacity: 0.3;
 }
-.image-layout .image .details {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--colWhite);
-    width: 100%;
-    height: 100%;
+
+.image-layout .image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--colBlack);
+	width: 100%;
+	height: 100%;
 }
-.image-layout .image .details h2 {
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 300px;
-    margin-top: 70px;
-    transition: 0.4s;
-    transition-property: transform;
+
+.image-layout .image .details h2{
+    background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
 }
-.image-layout .image .details h2 span {
-    font-weight: 900;
+
+.image-layout .image .details h2 span{
+	font-weight: 900;
 }
-.image-layout .image:hover .details h2 {
-    transform: translateY(-30px);
+
+.image-layout .image:hover .details h2{
+	transform: translateY(-30px);
 }
-.image-layout .image .details p {
-    margin: 30px 30px 0 30px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    opacity: 0;
-    transition: 0.6s;
-    transition-property: opacity, transform;
+
+.image-layout .image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
 }
-.image-layout .image:hover .details p {
-    opacity: 1;
-    transform: translateY(-40px);
+
+.image-layout .image:hover .details p{
+	opacity: 1;
+	transform: translateY(-40px);
 }
-.image-layout .more {
-    position: absolute;
-    background: rgba(255,255,255,0.8);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    bottom: -60px;
-    transition: 0.6s;
-    transition-property: bottom;
+
+.image-layout .more{
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	bottom: -60px;
+	transition: 0.6s;
+	transition-property: bottom;
 }
-.image-layout .image:hover .more {
-    bottom: 0;
+
+.image-layout .image:hover .more{
+	bottom: 0;
 }
-.image-layout .more .read-more {
-    color: var(--colWhite);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
+
+.image-layout .more .read-more{
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
+
 .image-layout .more .read-more span{
-    font-weight: 900;
+	font-weight: 900;
 }
-.image-layout .more .icon-links svg {
-    color: var(--colWhite);
-    font-size: 20px;
+
+.image-layout .more .icon-links i{
+	color: #000;
+	font-size: 20px;
 }
-.image-layout .more .icon-links a:not(:last-child) svg {
-    margin-right: 20px;
+
+.image-layout .more .icon-links a:not(:last-child) i{
+	margin-right: 20px;
 }
+
+/* .image-layout */
+
 /* Reponsize Announcement Page */
 @media (max-width: 1080px) {
     .image-layout .image {
@@ -130,24 +155,29 @@
     .image-layout .image .details p {
         font-size: 16px;
     }
+
     .image-layout .more,
     .image-layout .more .icon-links a svg {
         font-size: 18px;
     }
 }
+
 /* Lecture Page */
 .announcement.page .title,
 .lecture.page .title,
 .contact.page .title{
     margin-top: 100px;
 }
+
 .lecture.page .card-img-top {
     height: 150px;
     width: 305px;
 }
+
 .lecture.page .para {
     font-size: 14px;
 }
+
 /* Paragrah for introduce lectures */
 .para_introduce_lecture {
     font-size: 16px;
@@ -163,6 +193,7 @@
 
 body {
     overflow: hidden;
+    height: 100vh
 }
 
 .mainscreen {
@@ -331,7 +362,6 @@ body {
 }
 
 /* Contact page */
-
 .contact.page {
     position: relative;
     width: 100%;
