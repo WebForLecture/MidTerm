@@ -20,107 +20,112 @@
 </head>
 
 <body>
-    <div class="position-relative">
-        <!-- Nav -->
-        <nav class="navbar navbar-expand-lg fixed" id="nav">
-            <div class="container-fluid">
-                <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="/img/TĐT_logo-removebg.png" alt="Logo" width="80em">
-                </a>
-                <a class="navbar-brand" href="#">Đăng nhập</a>
-                <!--ToggleBtn-->
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--SideBar-->
-                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <!--SideBar Header-->
-                    <div class="offcanvas-header text-black border-bottom border-dark">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dzoãn Xuân Thanh</h5>
-                        <button type="button" class="btn-close shadow-none  " data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <!--SideBar Body-->
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active mx-2" href="#introduce">Giới thiệu</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle mx-2" href="" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tài liệu
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#OOP">Lập trình hướng đối tượng</a></li>
-                                    <li><a class="dropdown-item" href="#Web">Lập trình Web và Ứng dụng</a></li>
-                                    <li><a class="dropdown-item" href="#CSDL">Hệ cơ sở dữ liệu</a></li>
-                                    <li><a class="dropdown-item" href="#UXUI">UX-UI</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/lectures.html">Xem thêm</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/announcement.html">Thông báo - Tin tức</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#JobInformantion">Thông tin việc làm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/contact.html">Liên hệ</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg fixed" id="nav">
+        <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="/img/TĐT_logo-removebg.png" alt="Logo" width="80em">
+            </a>
+            <a class="navbar-brand" href="#">Đăng nhập</a>
+            <!--ToggleBtn-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!--SideBar Header-->
+                <div class="offcanvas-header text-black border-bottom border-dark">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dzoãn Xuân Thanh</h5>
+                    <button type="button" class="btn-close shadow-none  " data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!--SideBar Body-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-2" href="#introduce">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tài liệu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#OOP">Lập trình hướng đối tượng</a></li>
+                                <li><a class="dropdown-item" href="#Web">Lập trình Web và Ứng dụng</a></li>
+                                <li><a class="dropdown-item" href="#CSDL">Hệ cơ sở dữ liệu</a></li>
+                                <li><a class="dropdown-item" href="#UXUI">UX-UI</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/lectures.html">Xem thêm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="/announcement.html">Thông báo - Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#JobInformantion">Thông tin việc làm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="/contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-        </nav>
-        <!-- Body-->
-        <div class="mainscreen contact">
-            <div class="color">
-                <div class="container-fluid px-4 con" style="width: 70%;">
-                    <div class="row gx-5">
-                      <div class="border col con1 rounded">
+        </div>
+    </nav>
+    <!-- Body-->
+    <div class="mainscreen contact">
+        <div class="color">
+            <div class="container-fluid px-4 con" style="width: 70%;">
+                <div class="row gx-5">
+                    <div class="border col con1 rounded my-5">
                         <h2 style="text-align: center; margin: .5rem;">THÔNG TIN THÊM</h2>
-                        <div class="d-grid gap-3">
+                        <div class="d-grid gap-3 bg-light rounded pb-4">
                             <div class="p-2"><i class="bi bi-telephone"></i> 0123456789</div>
                             <div class="p-2"><i class="bi bi-envelope"></i> dzoanxuanthanh@tdtu.edu.vn</div>
-                            <div class="p-2">Phòng làm việc: C119, Số 19 Nguyễn Hữu Thọ, P. Tân Phong, Quận 7, Tp. Hồ Chí Minh. </div>
+                            <div class="p-2">Phòng làm việc: C119, Số 19 Nguyễn Hữu Thọ, P. Tân Phong, Quận 7, Tp.
+                                Hồ Chí Minh. </div>
                             <div class="p-2"> Mọi thắc mắc vui lòng điền vào form bên cạnh! </div>
                         </div>
                         <hr class="d-sm-none">
-                      </div>
-                      <div class="border col con2 rounded">
+                    </div>
+                    <div class="border col con2 rounded my-5">
                         <div class="container-fluid contact_form rounded" style="width: 100%;">
                             <h2 style="text-align: center; margin: .5rem;">PHẢN HỒI</h2>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"> <i class="bi bi-person"></i> </span>
-                                <input type="text" class="form-control " placeholder="Họ và Tên" aria-label="Username" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1"> <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control " placeholder="Họ và Tên" aria-label="Username"
+                                    aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1"> <i class="bi bi-envelope"></i> </span>
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1"> <i class="bi bi-envelope"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                                    aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
-                                <textarea class="form-control" placeholder="Nhập phản hồi của bạn tại đây..." rows="6" style="resize: none;"></textarea>
+                                <textarea class="form-control" placeholder="Nhập phản hồi của bạn tại đây..." rows="6"
+                                    style="resize: none;"></textarea>
                             </div>
                             <div style="text-align: center;" class="col-auto">
                                 <button type="submit" class="btn btn-primary mb-3">Gửi</button>
                             </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- Fast travel button -->
     <!-- Footer -->
     <footer class="footer">

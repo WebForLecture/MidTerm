@@ -20,91 +20,89 @@
 </head>
 
 <body>
-    <div class="position-relative">
-        <!-- Nav -->
-        <nav class="navbar navbar-expand-lg fixed" id="nav">
-            <div class="container-fluid">
-                <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="/img/TĐT_logo-removebg.png" alt="Logo" width="80em">
-                </a>
-                <a class="navbar-brand" href="#">Đăng nhập</a>
-                <!--ToggleBtn-->
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg fixed" id="nav">
+        <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="/img/TĐT_logo-removebg.png" alt="Logo" width="80em">
+            </a>
+            <a class="navbar-brand" href="#">Đăng nhập</a>
+            <!--ToggleBtn-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!--SideBar Header-->
+                <div class="offcanvas-header text-black border-bottom border-dark">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dzoãn Xuân Thanh</h5>
+                    <button type="button" class="btn-close shadow-none  " data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!--SideBar Body-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-2" href="#introduce">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tài liệu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#OOP">Lập trình hướng đối tượng</a></li>
+                                <li><a class="dropdown-item" href="#Web">Lập trình Web và Ứng dụng</a></li>
+                                <li><a class="dropdown-item" href="#CSDL">Hệ cơ sở dữ liệu</a></li>
+                                <li><a class="dropdown-item" href="#UXUI">UX-UI</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/lectures.html">Xem thêm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="/announcement.html">Thông báo - Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#JobInformantion">Thông tin việc làm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="/contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Body-->
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="/img/main_img_with_splash.png" alt="Dzoãn Xuân Thanh profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Xin chào, tôi là</p>
+            <h1 class="title">Dzoãn Xuân Thanh</h1>
+            <p class="section_text_p2">
+                <span class="multiText"></span>
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 border">
+                    Tin việc làm
                 </button>
-                <!--SideBar-->
-                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <!--SideBar Header-->
-                    <div class="offcanvas-header text-black border-bottom border-dark">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dzoãn Xuân Thanh</h5>
-                        <button type="button" class="btn-close shadow-none  " data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <!--SideBar Body-->
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active mx-2" href="#introduce">Giới thiệu</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle mx-2" href="" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tài liệu
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#OOP">Lập trình hướng đối tượng</a></li>
-                                    <li><a class="dropdown-item" href="#Web">Lập trình Web và Ứng dụng</a></li>
-                                    <li><a class="dropdown-item" href="#CSDL">Hệ cơ sở dữ liệu</a></li>
-                                    <li><a class="dropdown-item" href="#UXUI">UX-UI</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/lectures.html">Xem thêm</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/announcement.html">Thông báo - Tin tức</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#JobInformantion">Thông tin việc làm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/contact.html">Liên hệ</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
+                <button class="btn btn-color-1">
+                    Liên hệ
+                </button>
             </div>
-        </nav>
-        <!-- Body-->
-        <section id="profile">
-            <div class="section_pic-container">
-                <img src="/img/main_img_with_splash.png" alt="Dzoãn Xuân Thanh profile picture">
-            </div>
-            <div class="section_text">
-                <p class="section_text_p1">Xin chào, tôi là</p>
-                <h1 class="title">Dzoãn Xuân Thanh</h1>
-                <p class="section_text_p2">
-                    <span class="multiText"></span>
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 border">
-                        Tin việc làm
-                    </button>
-                    <button class="btn btn-color-1">
-                        Liên hệ
-                    </button>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- Link js of typing word that made animation for title "Dzoan Xuan Thanh"-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
